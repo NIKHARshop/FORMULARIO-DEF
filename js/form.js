@@ -11,7 +11,7 @@ document.querySelector('#submit').addEventListener('click', e => {
   const nombre = document.querySelector('#cliente').value;
   const color = document.querySelector('#color').value;
   const celular = document.querySelector('#celular').value;
-  const direccion = document.querySelector('#direccion').value;
+  const direccion = document.querySelector('#direccion').value; 
   const municipio = document.querySelector('#municipio').value;
   const observaciones = document.querySelector('#observaciones').value;
   const departamento = document.querySelector('#departamento').value;
@@ -28,6 +28,8 @@ document.querySelector('#submit').addEventListener('click', e => {
           *celular*%0A
           ${celular}%0A
           *correo*%0A
+          ${correo}%0A
+          *departamento*%0A
           ${departamento}%0A
           *ciudad*%0A
           ${ciudad}%0A
