@@ -52,7 +52,6 @@ document.querySelector('#submit').addEventListener('click', e => {
           *OBSERVACIONES*%0A
           ${observaciones}%0A
          
-
   if (nombre === '' || celular === '' || correo === '') {
     resp.classList.add('fail');
     resp.innerHTML = `Faltan algunos datos, ${nombre}${celular}${correo}${departamento}${ciudad}${localidad}${barrio}${direccion}${codigo}`;
