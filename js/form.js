@@ -50,7 +50,7 @@ document.querySelector('#submit').addEventListener('click', e => {
           *COLOR*%0A
           ${color}%0A
           *OBSERVACIONES*%0A
-          ${observaciones}%0A
+          ${observaciones}`;
          
   if (nombre === '' || celular === '' || correo === '') {
     resp.classList.add('fail');
