@@ -18,10 +18,11 @@
         Llena este pequeño forulario con los datos correctos, los campos con * es obligatorio
       </p>
 
-      <label for="nombre" class="formulario__label" onkeyup="mayuscula(this);">NOMBRE</label>
+      <label for="nombre" class="formulario__label">NOMBRE</label>
       <input
         id="cliente"
         type="text"
+        onkeyup="mayuscula"(this);
         class="formulario__input"
         required=""
         pattern="[A-Z]+"
