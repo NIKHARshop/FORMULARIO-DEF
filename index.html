@@ -19,31 +19,28 @@
         Llena este pequeño forulario con los datos correctos, los campos con * es obligatorio
       </p>
 
-      <label for="nombre" class="formulario__label">NOMBRE</label>
+      <label for="nombre" class="formulario__label">NOMBRE*</label>
       <input
         id="cliente"
         type="text"
         class="formulario__input"
-        required=""
         placeholder="Indica cuál es tu nombre completo"
         
       />
 
-      <label for="celular" class="formulario__label">CELULAR</label>
-      <input id="celular" type="tel" class="formulario__input" placeholder="57 ##########" required=""
-      pattern="[0-9]" maxlength="12">
+      <label for="celular" class="formulario__label">CELULAR*</label>
+      <input id="celular" type="tel" class="formulario__input" placeholder="57 ##########">
 
-      <label for="email" class="formulario__label">CORREO ELECTRONICO</label>
+      <label for="email" class="formulario__label">CORREO ELECTRONICO*</label>
       <input
         id="email"
         type="email"
         class="formulario__input"
-        required=""
         placeholder="ejemplo@ejemplo.completo"
       />
 
-      <label for="departaento" class="formulario__label">DEPARTAMENTO</label>
-      <select id="departamento" name="departamento" class="formulario__input" required="">
+      <label for="departaento" class="formulario__label">DEPARTAMENTO*</label>
+      <select id="departamento" name="departamento" class="formulario__input">
         <option value="">Selecciona una opción</option>
         <option value="amazonas">Amazonas</option>
         <option value="antioquia">Antioquia</option>
@@ -79,7 +76,7 @@
         <option value="vichada">Vichada</option>
       </select>
 
-      <label for="ciudad" class="formulario__label" required="">CIUDAD</label>
+      <label for="ciudad" class="formulario__label">CIUDAD*</label>
       <select id="ciudad" name="ciudad" class="formulario__input">
         <option value="">Selecciona una opción</option>
         <option value="cali">Cali</option>
@@ -132,37 +129,32 @@
       <input id="municipio" type="text" class="formulario__input" placeholder="Solo si aplica" />
 
       <label for="localidad" class="formulario__label"
-      >LOCALIDAD</label
+      >LOCALIDAD*</label
     >
     <input
       id="localidad"
       type="text"
       class="formulario__input"
-      required=""
-      pattern="[A-Z]+"
       placeholder="Localidad"
     />
 
     <label for="barrio" class="formulario__label"
-    >BARRIO</label
+    >BARRIO*</label
   >
   <input
     id="barrio"
     type="text"
     class="formulario__input"
-    required=""
-    pattern="[A-Z]+"
     placeholder="Barrio"
   />
 
       <label for="direccion" class="formulario__label"
-        >DIRECCION (ingresar direccion completa si aplica)</label
+        >DIRECCION* (ingresar direccion completa si aplica)</label
       >
       <input
         id="direccion"
         type="text"
         class="formulario__input"
-        required=""
         placeholder="Calle xx # xx-xx apto xxx torre xxx"
       />
 
@@ -172,8 +164,8 @@
         campos con * es obligatorio.
       </p>
 
-      <label for="codigo" class="formulario__label">CODIGO DE PRODUCTO</label>
-      <input id="codigo" type="text" class="formulario__input" placeholder="Codigo" required="" />
+      <label for="codigo" class="formulario__label">CODIGO DE PRODUCTO*</label>
+      <input id="codigo" type="text" class="formulario__input" placeholder="Codigo" />
 
       <label for="servicio" class="formulario__label">TALLA (Solo si aplica)</label>
       <select id="talla" name="talla" class="formulario__input" aria-placeholder="Talla">
