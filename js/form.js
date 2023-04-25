@@ -59,7 +59,9 @@ document.querySelector('#submit').addEventListener('click', e => {
   }
   function mayuscula(e){
     e.value = e.value.toUpperCase();
+    formulario.reset();
   }
+  
   resp.classList.remove('fail');
   resp.classList.add('send');
   resp.innerHTML = `Se ha enviado tu pedido, ${nombre}`;
