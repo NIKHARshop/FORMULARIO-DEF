@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <form action="" class="formulario">
+    <form action="" class="formulario" method="post">
       <div class="imagen">
         <img src="https://i.ibb.co/c3n1VZm/logo-leon-4.png" alt="logo-leon-4" width="400px" />
       </div>
@@ -18,33 +18,40 @@
         Llena este pequeño forulario con los datos correctos, los campos con * es obligatorio
       </p>
 
-      <label for="nombre" class="formulario__label">NOMBRE</label>
+      <label for="nombre" class="formulario__label" onkeyup="mayuscula(this);">NOMBRE</label>
       <input
         id="cliente"
         type="text"
         class="formulario__input"
+        required=""
+        pattern="[A-Z]+"
         placeholder="Indica cuál es tu nombre completo"
+        
       />
 
       <label for="celular" class="formulario__label">CELULAR</label>
-      <input id="celular" type="tel" class="formulario__input" placeholder="57 ##########" />
+      <input id="celular" type="tel" class="formulario__input" placeholder="57 ##########" required=""
+      pattern="[0-9]">
 
       <label for="email" class="formulario__label">CORREO ELECTRONICO</label>
       <input
         id="email"
         type="email"
         class="formulario__input"
+        required=""
+        pattern="[@]+"
+        maxlength="12"
         placeholder="ejemplo@ejemplo.completo"
       />
 
       <label for="departaento" class="formulario__label">DEPARTAMENTO</label>
-      <select id="departamento" name="departamento" class="formulario__input">
+      <select id="departamento" name="departamento" class="formulario__input" required="">
         <option value="">Selecciona una opción</option>
         <option value="amazonas">Amazonas</option>
         <option value="antioquia">Antioquia</option>
         <option value="arauca">Arauca</option>
         <option value="atlantico">Atlántico</option>
-        <option value="bogota">Bogota</option>
+        <option value="Bogota">Bogota</option>
         <option value="bolivar">Bolívar</option>
         <option value="boyaca">Boyacá</option>
         <option value="caldas">Caldas</option>
@@ -74,7 +81,7 @@
         <option value="vichada">Vichada</option>
       </select>
 
-      <label for="ciudad" class="formulario__label">CIUDAD</label>
+      <label for="ciudad" class="formulario__label" required="">CIUDAD</label>
       <select id="ciudad" name="ciudad" class="formulario__input">
         <option value="">Selecciona una opción</option>
         <option value="cali">Cali</option>
@@ -133,6 +140,8 @@
       id="localidad"
       type="text"
       class="formulario__input"
+      required=""
+      pattern="[A-Z]+"
       placeholder="Localidad"
     />
 
@@ -143,6 +152,8 @@
     id="barrio"
     type="text"
     class="formulario__input"
+    required=""
+    pattern="[A-Z]+"
     placeholder="Barrio"
   />
 
@@ -153,6 +164,7 @@
         id="direccion"
         type="text"
         class="formulario__input"
+        required=""
         placeholder="Calle xx # xx-xx apto xxx torre xxx"
       />
 
@@ -163,7 +175,7 @@
       </p>
 
       <label for="codigo" class="formulario__label">CODIGO DE PRODUCTO</label>
-      <input id="codigo" type="text" class="formulario__input" placeholder="Codigo" />
+      <input id="codigo" type="text" class="formulario__input" placeholder="Codigo" required="" />
 
       <label for="servicio" class="formulario__label">TALLA (Solo si aplica)</label>
       <select id="talla" name="talla" class="formulario__input" aria-placeholder="Talla">
@@ -177,12 +189,14 @@
       </select>
       <label for="color" class="formulario__label">COLOR</label>
       <input id="color" type="text" class="formulario__input" placeholder="Solo si aplica" />
-      <br>
+      
+      
       <label for="observaciones" class="formulario__label">OBSERVACIONES</label>
-      <textarea class="formulario__input" name="" id="observaciones" cols="95" rows="10"></textarea>
+      <textarea class="formulario__input" name="textoArea" id="observaciones" cols="95" rows="4"></textarea>
       <div id="respuesta"></div>
       <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
     </form>
     <script src="js/form.js"></script>
   </body>
 </html>
+
