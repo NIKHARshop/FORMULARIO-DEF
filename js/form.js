@@ -57,11 +57,7 @@ document.querySelector('#submit').addEventListener('click', e => {
     resp.innerHTML = `Faltan algunos datos, ${nombre}${celular}${correo}${departamento}${ciudad}${localidad}${barrio}${direccion}${codigo}`;
     return false;
   }
-  function mayuscula(e){
-    e.value = e.value.toUpperCase();
-    formulario.reset();
-  }
-  
+ 
   resp.classList.remove('fail');
   resp.classList.add('send');
   resp.innerHTML = `Se ha enviado tu pedido, ${nombre}`;
