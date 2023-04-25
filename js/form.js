@@ -17,8 +17,7 @@ document.querySelector('#submit').addEventListener('click', e => {
   const barrio = document.querySelector('#barrio').value;
   const observaciones = document.querySelector('#observaciones').value;
   const departamento = document.querySelector('#departamento').value;
-  const f_subir = document.querySelector('#f_subir').value;
-
+ 
   const resp = document.querySelector("#respuesta");
 
   resp.classList.remove('fail');
@@ -52,25 +51,14 @@ document.querySelector('#submit').addEventListener('click', e => {
           ${color}%0A
           *OBSERVACIONES*%0A
           ${observaciones}%0A
-          *f_subir*%0A
-          ${f_subir}`;
+         
 
   if (nombre === '' || celular === '' || correo === '') {
     resp.classList.add('fail');
     resp.innerHTML = `Faltan algunos datos, ${nombre}${celular}${correo}${departamento}${ciudad}${localidad}${barrio}${direccion}${codigo}`;
     return false;
   }
-  function exprorar() {
-    document.getElementById("f_subir").click();
-    $ ("#nombre_arch").html("");
-  }
-  function obtener_arch() {
-    var
-     nombre_arch=document.getElementById("f_subir").files[0].name
-     ;
-    $("#nombre_arch").html("<small><b>Archivo a subir</b><br clear='all'>"+nombre_arch+"</small><br clear='all'><br clear=all'>"+"<br clear=all'><button onclick=javascript:subir_arch();>Subir</button>");
-
-  }
+  
  
   resp.classList.remove('fail');
   resp.classList.add('send');
