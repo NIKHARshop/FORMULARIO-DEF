@@ -13,6 +13,8 @@ document.querySelector('#submit').addEventListener('click', e => {
   const celular = document.querySelector('#celular').value;
   const direccion = document.querySelector('#direccion').value; 
   const municipio = document.querySelector('#municipio').value;
+  const localidad = document.querySelector('#localidad').value;
+  const barrio = document.querySelector('#barrio').value;
   const observaciones = document.querySelector('#observaciones').value;
   const departamento = document.querySelector('#departamento').value;
 
@@ -35,6 +37,10 @@ document.querySelector('#submit').addEventListener('click', e => {
           ${ciudad}%0A
           *municipio*%0A
           ${municipio}%0A
+          *localidad*%0A
+          ${localidad}%0A
+          *barrio*%0A
+          ${barrio}%0A
           *direccion*%0A
           ${direccion}%0A
           *codigo*%0A
