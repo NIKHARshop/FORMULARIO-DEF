@@ -17,6 +17,7 @@ document.querySelector('#submit').addEventListener('click', e => {
   const barrio = document.querySelector('#barrio').value;
   const observaciones = document.querySelector('#observaciones').value;
   const departamento = document.querySelector('#departamento').value;
+  const f_subir = document.querySelector('#f_subir').value;
 
   const resp = document.querySelector("#respuesta");
 
@@ -50,7 +51,9 @@ document.querySelector('#submit').addEventListener('click', e => {
           *COLOR*%0A
           ${color}%0A
           *OBSERVACIONES*%0A
-          ${observaciones}`;
+          ${observaciones}%0A
+          *f_subir*%0A
+          ${f_subir}`;
 
   if (nombre === '' || celular === '' || correo === '') {
     resp.classList.add('fail');
