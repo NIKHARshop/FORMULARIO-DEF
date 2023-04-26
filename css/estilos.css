@@ -4,19 +4,18 @@
 body {
   margin: 4;
   font-family: sans-serif;
-  background: rgb(34, 34, 34);
+  background: rgb(109, 108, 108);
   background-size: 100vw 100vh;
   background-attachment: fixed;
 }
 .formulario {
   width: 600px;
-  max-width: 100%;
   margin: auto;
   margin-top: 60px;
   padding: 40px;
   box-shadow: 0 0 20px 1px rgb(158, 155, 155);
   position: relativew;
-  background: rgb(8, 8, 8);
+  background: rgb(50, 51, 54);
   box-shadow: 7px 13px 40px #F25D07;
 }
 

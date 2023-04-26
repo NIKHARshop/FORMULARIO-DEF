@@ -58,6 +58,7 @@ document.querySelector('#submit').addEventListener('click', e => {
     ${direccion}${codigo}${color}${talla}${observaciones}`;
     return false;
   }
+ 
   
  
   resp.classList.remove('fail');

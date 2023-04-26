@@ -12,7 +12,7 @@
     <form action="" class="formulario" method="post">
       <center>
       <div class="imagen">
-        <img src="https://i.ibb.co/c3n1VZm/logo-leon-4.png" alt="logo-leon-4" width="400px" />
+        <img src="https://i.ibb.co/c3n1VZm/logo-leon-4.png" alt="logo-leon-4" width="300px" />
       </div>
     </center>
 
@@ -22,15 +22,16 @@
       </p>
    
       <label for="nombre" class="formulario__label"><i class="fa-solid fa-user" style="color:brown">&nbsp;&nbsp;</i><strong>NOMBRE*</strong><label>
-      <input id="cliente" type="text" class="formulario__input" required=""/>
+      <input id="cliente" type="text"  class="formulario__input" required=""/>
+      
       
 
       <label for="celular" class="formulario__label"><i class="fa-solid fa-mobile-retro" style="color:brown">&nbsp;&nbsp;</i><strong>CELULAR*</strong></label>
-      <input id="celular" type="tel" class="formulario__input" required=""/>
+      <input id="celular" type="tel" class="formulario__input" required="" placeholder="57" maxlength="12"/>
 
 
       <label for="email" class="formulario__label"><i class="fa-sharp fa-solid fa-envelope" style="color:brown">&nbsp;&nbsp;</i><strong>CORREO ELECTRONICO*</strong></label>
-      <input id="email" type="email"class="formulario__input" required=""/>
+      <input id="email" type="email"class="formulario__input" required="" placeholder="@"/>
  
       <label for="departaento" class="formulario__label"> <i class="fa-solid fa-map" style="color:brown"></i>&nbsp;&nbsp;<strong>DEPARTAMENTO*</strong></label>
       <select id="departamento" name="departamento" class="formulario__input" required="">
@@ -120,8 +121,8 @@
 
       
      
-      <label for="municipio" class="formulario__label"> <i class="fa-solid fa-map-pin" style="color:brown"></i>&nbsp;&nbsp;<strong>MUNICIPIO</strong> (Solo si aplica ejemplo: no es capital)</label>
-      <input id="municipio" type="text" class="formulario__input"/>
+      <label for="municipio" class="formulario__label"> <i class="fa-solid fa-map-pin" style="color:brown"></i>&nbsp;&nbsp;<strong>MUNICIPIO</strong> </label>
+      <input id="municipio" type="text" class="formulario__input" placeholder="Solo si aplica (ejemplo: no es capital)"/>
      
 
       <label for="localidad" class="formulario__label"><i class="fa-solid fa-thumbtack" style="color:brown">&nbsp;&nbsp;</i><strong>LOCALIDAD*</strong></label>
@@ -147,9 +148,9 @@
       <input id="codigo" type="text" class="formulario__input" required=""/>
 
 
-      <label for="servicio" class="formulario__label"><i class="fa-brands fa-algolia" style="color:brown"></i>&nbsp;&nbsp;<strong>TALLA</strong>(Solo si aplica)</label>
+      <label for="servicio" class="formulario__label"><i class="fa-brands fa-algolia" style="color:brown"></i>&nbsp;&nbsp;<strong>TALLA</strong></label>
       <select id="talla" name="talla" class="formulario__input" aria-placeholder="Talla">
-        <option></option>
+        <option>Solo si aplica</option>
         <option>S</option>
         <option>M</option>
         <option>L</option>
@@ -159,8 +160,8 @@
       </select>
     
 
-      <label for="color" class="formulario__label"><i class="fa-solid fa-circle-half-stroke" style="color:brown">&nbsp;&nbsp;</i><strong>COLOR</strong> (Solo si aplica)</label>
-      <input id="color" type="text" class="formulario__input"/>
+      <label for="color" class="formulario__label"><i class="fa-solid fa-circle-half-stroke" style="color:brown">&nbsp;&nbsp;</i><strong>COLOR</strong></label>
+      <input id="color" type="text" class="formulario__input" placeholder="Solo si aplica"/>
 
       
       <label for="observaciones" class="formulario__label"><i class="fa-solid fa-pen" style="color:brown">&nbsp;&nbsp;</i><strong>OBSERVACIONES</strong></label>
