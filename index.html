@@ -7,9 +7,12 @@
     <title>FORMULARIO</title>
     <script src="https://kit.fontawesome.com/b0e6ca1384.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/samples.css">
+  <link rel="stylesheet" href="css/index.css">
+
   </head>
   <body>
-    <form action="" class="formulario" method="post">
+    <form action="" class="formulario" method="post" enctype="multipart/form-data">
       <center>
       <div class="imagen">
         <img src="https://i.ibb.co/c3n1VZm/logo-leon-4.png" alt="logo-leon-4" width="300px" />
@@ -18,7 +21,7 @@
 
       <h1 class="formulario__titulo">FORMULARIO DE PEDIDO</h1>
       <p class="formulario__parrafo">
-       <STRONg> Llena este pequeño forulario con los datos correctos, los campos con * es obligatorio</STRONg>
+       <strong> Llena este pequeño forulario con los datos correctos, los campos con * es obligatorio</strong>
       </p>
    
       <label for="nombre" class="formulario__label"><i class="fa-solid fa-user" style="color:brown">&nbsp;&nbsp;</i><strong>NOMBRE*</strong><label>
@@ -144,7 +147,7 @@
       </p>
 
        
-      <label for="codigo" class="formulario__label"> <i class="fa-solid fa-tag" style="color:brown"></i>&nbsp;&nbsp;<strong>CODIGO DE PRODUCTO*</strong></label>
+      <label for="codigo" class="formulario__label"> <i class="fa-solid fa-tag" style="color:brown"></i>&nbsp;&nbsp;<strong>CODIGO DEL PRODUCTO*</strong></label>
       <input id="codigo" type="text" class="formulario__input" required=""/>
 
 
@@ -173,14 +176,29 @@
           <p class="formulario__parrafo">
             <strong>Para mayor seguridad enviame al WhatsApp captura del producto que deseas.</strong>
           </p>
-          
-   
+          <center>
+          <div class="div centrado borde fondo deg">
+            <a href="javascript:explorar();">
+              <div class="">
+                <img src="icono subir imagen.png" height="80px" title="Subir imagen"><br clear="all">
+                SUBIR IMAGEN
+              </div>
+            </a>
+            <input type="file" name="f_subir" id="f_subir" style="display: none;">
+          </div>
+        </center>
+
+
+
+
+
       <div id="respuesta"></div>
-      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+      <button id="submit" class="formulario__submit" onclick="return validar();">Enviar a WhatsApp</button>
+
+      
     </form>
     <script src="js/form.js"></script>
   </body>
-  
 </html>
 
 

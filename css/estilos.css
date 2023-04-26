@@ -10,6 +10,7 @@ body {
 }
 .formulario {
   width: 600px;
+  max-width: 800px;
   margin: auto;
   margin-top: 60px;
   padding: 40px;
@@ -130,3 +131,4 @@ body {
     font-size: 18px;
 
 } 
+

@@ -59,11 +59,13 @@ document.querySelector('#submit').addEventListener('click', e => {
     return false;
   }
  
-  
- 
   resp.classList.remove('fail');
   resp.classList.add('send');
   resp.innerHTML = `Se ha enviado tu pedido, ${nombre}`;
 
   window.open(url);
+  window.alert('TU PEDIDO A SIDO ENVIADO');
+
+
+  
 });
