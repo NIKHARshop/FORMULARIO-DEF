@@ -4,19 +4,19 @@
 body {
   margin: 4;
   font-family: sans-serif;
-  background: rgb(70, 69, 69);
+  background: black;
   background-size: 100vw 100vh;
   background-attachment: fixed;
 }
 .formulario {
-  width: 800px;
+  width: 600px;
   max-width: 100%;
   margin: auto;
   margin-top: 60px;
   padding: 40px;
-  box-shadow: 0 0 20px 1px black;
-  position: relative;
-  background: transparent;
+  box-shadow: 0 0 20px 1px rgb(158, 155, 155);
+  position: relativew;
+  background: white;
   box-shadow: 7px 13px 40px #F25D07;
 }
 
@@ -129,21 +129,100 @@ body {
     border: 1px solid #24303c;
     font-family: 'calibri';
     font-size: 18px;
+
 }
-::placeholder {
-  font-family: "font awesome 2 free";
-  font-weight: 0;
-  color: #b8b7b7;
-  
+.formulario .icono_caja1 i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 15px;
+  color: #8f0404;
 }
-.formulario1 {
-  color:  #F2A20C;
-  
-}
-.formulariosubirimagen {
-  width: 90%;
+.formulario .icono_caja2 i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
   font-size: 20px;
-    
+  color: #8f0404;
 }
+.formulario .icono_caja3 i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 20px;
+  color: #8f0404;
+}
+.formulario .icono_caja4 i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 20px;
+  color: #8f0404;
+}
+.formulario .icono_caja5 i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 20px;
+  color: #8f0404;
+}
+.formulario .icono_caja6 i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 18px;
+  color: #8f0404;
+}
+.formulario .icono_caja7 i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 18px;
+  color: #8f0404;
+}
+.formulario .icono_caja8 i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 18px;
+  color: #8f0404;
+}
+.formulario .icono_caja9 i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 15px;
+  color: #8f0404;
+}
+.formulario .icono_cajac i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 15px;
+  color: #8f0404;
+}
+.formulario .icono_cajat i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 15px;
+  color: #8f0404;
+}
+.formulario .icono_cajaco i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 15px;
+  color: #8f0404;
+}
+.formulario .icono_cajao i{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 1.5%;
+  font-size: 15px;
+  color: #8f0404;
+}
+
+    
     
     

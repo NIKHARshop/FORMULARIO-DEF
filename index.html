@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FORMULARIO</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b0e6ca1384.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
@@ -16,32 +16,34 @@
 
       <h1 class="formulario__titulo">FORMULARIO DE PEDIDO</h1>
       <p class="formulario__parrafo">
-        Llena este pequeño forulario con los datos correctos, los campos con * es obligatorio
+       <STRONg> Llena este pequeño forulario con los datos correctos, los campos con * es obligatorio</STRONg>
       </p>
 
-      <label for="nombre" class="formulario__label">NOMBRE</label>
-      <input
-        id="cliente"
-        type="text"
-        class="formulario__input"
-        placeholder="Indica cuál es tu nombre completo"
-        
-      />
-
-      <label for="celular" class="formulario__label">CELULAR</label>
-      <input id="celular" type="tel" class="formulario__input" placeholder="57 ##########">
-
-      <label for="email" class="formulario__label">CORREO ELECTRONICO</label>
+      <label for="nombre" class="formulario__label"><strong>NOMBRE*</strong></label>
+      <div class="icono_caja1">
+      <i class="fa-solid fa-user"></i>
+      <input id="cliente" type="text" class="formulario__input" placeholder="">
+      
+    </div>
+       <div class="icono_caja2">
+        <i class="fa-solid fa-mobile-retro"></i>
+      <label for="celular" class="formulario__label"><strong>CELULAR*</strong></label>
+      <input id="celular" type="tel" class="formulario__input">
+    </div>
+    <div class="icono_caja3">
+      <i class="fa-sharp fa-solid fa-envelope"></i>
+      <label for="email" class="formulario__label"><strong>CORREO ELECTRONICO*</strong></label>
       <input
         id="email"
         type="email"
         class="formulario__input"
-        placeholder="ejemplo@ejemplo.completo"
       />
-
-      <label for="departaento" class="formulario__label">DEPARTAMENTO</label>
+    </div>
+      <div class="icono_caja4">
+        <i class="fa-solid fa-map"></i>
+      <label for="departaento" class="formulario__label"><strong>DEPARTAMENTO*</strong></label>
       <select id="departamento" name="departamento" class="formulario__input">
-        <option value="">Selecciona una opción</option>
+        <option value=""></option>
         <option value="amazonas">Amazonas</option>
         <option value="antioquia">Antioquia</option>
         <option value="arauca">Arauca</option>
@@ -75,10 +77,13 @@
         <option value="vaupes">Vaupés</option>
         <option value="vichada">Vichada</option>
       </select>
-
-      <label for="ciudad" class="formulario__label">CIUDAD</label>
+      </div>
+      <div class="icono_caja5">
+        <i class="fa-regular fa-map"></i>
+      <label for="ciudad" class="formulario__label">
+        <strong>CIUDAD*</strong></label>
       <select id="ciudad" name="ciudad" class="formulario__input">
-        <option value="">Selecciona una opción</option>
+        <option value=""></option>
         <option value="cali">Cali</option>
         <option value="medellín">Medellín</option>
         <option value="pereira">Pereira</option>
@@ -122,54 +127,49 @@
         <option value="Tolima">Tolima</option>
         <option value="Valle del Cauca">Valle del Cauca</option>
       </select>
+    </div>
+      <div class="icono_caja6">
+      <i class="fa-solid fa-map-pin"></i>
+      <label for="municipio" class="formulario__label">
+      <strong>MUNICIPIO</strong> (Solo si aplica ejemplo: no es capital)</label>
+      <input id="municipio" type="text" class="formulario__input"/>
+      </div>
+     
+      <div class="icono_caja7">
+      <i class="fa-solid fa-thumbtack"></i>
+      <label for="localidad" class="formulario__label"><strong>LOCALIDAD*</strong></label>
+      <input id="localidad" type="text" class="formulario__input"/>
+      </div>
 
-      <label for="municipio" class="formulario__label"
-        >MUNICIPIO (Solo si aplica ejemplo: no es capital)</label
-      >
-      <input id="municipio" type="text" class="formulario__input" placeholder="Solo si aplica" />
+      <div class="icono_caja8">
+      <i class="fa-solid fa-map-pin"></i>
+      <label for="barrio" class="formulario__label"><strong>BARRIO*</strong></label>
+      <input id="barrio" type="text" class="formulario__input"/>
+      </div>
 
-      <label for="localidad" class="formulario__label"
-      >LOCALIDAD*</label
-    >
-    <input
-      id="localidad"
-      type="text"
-      class="formulario__input"
-      placeholder="Localidad"
-    />
-
-    <label for="barrio" class="formulario__label"
-    >BARRIO</label
-  >
-  <input
-    id="barrio"
-    type="text"
-    class="formulario__input"
-    placeholder="Barrio"
-  />
-
-      <label for="direccion" class="formulario__label"
-        >DIRECCION(ingresar direccion completa si aplica)</label
-      >
-      <input
-        id="direccion"
-        type="text"
-        class="formulario__input"
-        placeholder="Calle xx # xx-xx apto xxx torre xxx"
-      />
+      <div class="icono_caja9">
+        <i class="fa-solid fa-house"></i>
+      <label for="direccion" class="formulario__label"><strong>DIRECCION*</strong>(ingresar direccion completa si aplica)</label>
+      <input id="direccion" type="text" class="formulario__input"/>
+    </div>
 
       <h1 class="formulario__titulo">INFORMACION DEL PRODUCTO</h1>
       <p class="formulario__parrafo">
-        Este espacio es para indicara el producto a solicitar, llenar los espacios si aplica, los
-        campos con * es obligatorio.
+        <strong>Este espacio es para indicara el producto a solicitar, llenar los espacios si aplica, los
+        campos con * es obligatorio.</strong>
       </p>
 
-      <label for="codigo" class="formulario__label">CODIGO DE PRODUCTO</label>
-      <input id="codigo" type="text" class="formulario__input" placeholder="Codigo" />
+       <div class="icono_cajac">
+       <i class="fa-solid fa-tag"></i>
+      <label for="codigo" class="formulario__label"><strong>CODIGO DE PRODUCTO*</strong></label>
+      <input id="codigo" type="text" class="formulario__input"/>
+    </div>
 
-      <label for="servicio" class="formulario__label">TALLA(Solo si aplica)</label>
+      <div class="icono_cajat">
+      <i class="fa-brands fa-algolia"></i>
+      <label for="servicio" class="formulario__label"><strong>TALLA</strong>(Solo si aplica)</label>
       <select id="talla" name="talla" class="formulario__input" aria-placeholder="Talla">
-        <option>Seleccione una opción</option>
+        <option></option>
         <option>S</option>
         <option>M</option>
         <option>L</option>
@@ -177,17 +177,23 @@
         <option>XL</option>
         <option>XXL</option>
       </select>
-      <label for="color" class="formulario__label">COLOR</label>
-      <input id="color" type="text" class="formulario__input" placeholder="Solo si aplica" />
+    </div>
+       <div class="icono_cajaco">
+       <i class="fa-solid fa-circle-half-stroke"></i>
+      <label for="color" class="formulario__label"><strong>COLOR</strong> (Solo si aplica)</label>
+      <input id="color" type="text" class="formulario__input"/>
+    </div>
       
-      
-      <label for="observaciones" class="formulario__label">OBSERVACIONES</label>
+      <div class="icono_cajao">
+      <i class="fa-solid fa-pen"></i>
+      <label for="observaciones" class="formulario__label"><strong>OBSERVACIONES</strong></label>
       <textarea class="formulario__input" name="textoArea" id="observaciones" cols="95" rows="4"></textarea>
       <div class="div_centrado borde fondo_deg">
+      </div>
         
           <h1 class="formulario__titulo">ENNVIAR CAPTURA DEL PRODUCTO QUE DESEAS SEGUIDO DE ESTE FORMULARIO</h1>          
           <p class="formulario__parrafo">
-            Para mayor seguridad enviame al WhatsApp captura del producto que deseas.
+            <strong>Para mayor seguridad enviame al WhatsApp captura del producto que deseas.</strong>
           </p>
           
    
