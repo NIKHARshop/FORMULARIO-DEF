@@ -10,39 +10,30 @@
   </head>
   <body>
     <form action="" class="formulario" method="post">
+      <center>
       <div class="imagen">
         <img src="https://i.ibb.co/c3n1VZm/logo-leon-4.png" alt="logo-leon-4" width="400px" />
       </div>
+    </center>
 
       <h1 class="formulario__titulo">FORMULARIO DE PEDIDO</h1>
       <p class="formulario__parrafo">
        <STRONg> Llena este pequeño forulario con los datos correctos, los campos con * es obligatorio</STRONg>
       </p>
-      <div class="icono_caja 1">
-      <i class="fa-solid fa-user"></i>
-      <label for="nombre" class="formulario__label"><strong>NOMBRE*</strong></label>
-      <input id="cliente" type="text" class="formulario__input" placeholder="">
-    </div>
+   
+      <label for="nombre" class="formulario__label"><i class="fa-solid fa-user" style="color:brown">&nbsp;&nbsp;</i><strong>NOMBRE*</strong><label>
+      <input id="cliente" type="text" class="formulario__input" required=""/>
       
-    </div>
-       <div class="icono_caja2">
-        <i class="fa-solid fa-mobile-retro"></i>
-      <label for="celular" class="formulario__label"><strong>CELULAR*</strong></label>
-      <input id="celular" type="tel" class="formulario__input">
-    </div>
-    <div class="icono_caja3">
-      <i class="fa-sharp fa-solid fa-envelope"></i>
-      <label for="email" class="formulario__label"><strong>CORREO ELECTRONICO*</strong></label>
-      <input
-        id="email"
-        type="email"
-        class="formulario__input"
-      />
-    </div>
-      <div class="icono_caja4">
-        <i class="fa-solid fa-map"></i>
-      <label for="departaento" class="formulario__label"><strong>DEPARTAMENTO*</strong></label>
-      <select id="departamento" name="departamento" class="formulario__input">
+
+      <label for="celular" class="formulario__label"><i class="fa-solid fa-mobile-retro" style="color:brown">&nbsp;&nbsp;</i><strong>CELULAR*</strong></label>
+      <input id="celular" type="tel" class="formulario__input" required=""/>
+
+
+      <label for="email" class="formulario__label"><i class="fa-sharp fa-solid fa-envelope" style="color:brown">&nbsp;&nbsp;</i><strong>CORREO ELECTRONICO*</strong></label>
+      <input id="email" type="email"class="formulario__input" required=""/>
+ 
+      <label for="departaento" class="formulario__label"> <i class="fa-solid fa-map" style="color:brown"></i>&nbsp;&nbsp;<strong>DEPARTAMENTO*</strong></label>
+      <select id="departamento" name="departamento" class="formulario__input" required="">
         <option value=""></option>
         <option value="amazonas">Amazonas</option>
         <option value="antioquia">Antioquia</option>
@@ -77,12 +68,11 @@
         <option value="vaupes">Vaupés</option>
         <option value="vichada">Vichada</option>
       </select>
-      </div>
-      <div class="icono_caja5">
-        <i class="fa-regular fa-map"></i>
-      <label for="ciudad" class="formulario__label">
-        <strong>CIUDAD*</strong></label>
-      <select id="ciudad" name="ciudad" class="formulario__input">
+   
+
+       
+      <label for="ciudad" class="formulario__label"> <i class="fa-regular fa-map" style="color:brown"></i>&nbsp;&nbsp;<strong>CIUDAD*</strong></label>
+      <select id="ciudad" name="ciudad" class="formulario__input" required="">
         <option value=""></option>
         <option value="cali">Cali</option>
         <option value="medellín">Medellín</option>
@@ -127,31 +117,24 @@
         <option value="Tolima">Tolima</option>
         <option value="Valle del Cauca">Valle del Cauca</option>
       </select>
-    </div>
-      <div class="icono_caja6">
-      <i class="fa-solid fa-map-pin"></i>
-      <label for="municipio" class="formulario__label">
-      <strong>MUNICIPIO</strong> (Solo si aplica ejemplo: no es capital)</label>
-      <input id="municipio" type="text" class="formulario__input"/>
-      </div>
+
+      
      
-      <div class="icono_caja7">
-      <i class="fa-solid fa-thumbtack"></i>
-      <label for="localidad" class="formulario__label"><strong>LOCALIDAD*</strong></label>
-      <input id="localidad" type="text" class="formulario__input"/>
-      </div>
+      <label for="municipio" class="formulario__label"> <i class="fa-solid fa-map-pin" style="color:brown"></i>&nbsp;&nbsp;<strong>MUNICIPIO</strong> (Solo si aplica ejemplo: no es capital)</label>
+      <input id="municipio" type="text" class="formulario__input"/>
+     
 
-      <div class="icono_caja8">
-      <i class="fa-solid fa-map-pin"></i>
-      <label for="barrio" class="formulario__label"><strong>BARRIO*</strong></label>
-      <input id="barrio" type="text" class="formulario__input"/>
-      </div>
+      <label for="localidad" class="formulario__label"><i class="fa-solid fa-thumbtack" style="color:brown">&nbsp;&nbsp;</i><strong>LOCALIDAD*</strong></label>
+      <input id="localidad" type="text" class="formulario__input" required=""/>
 
-      <div class="icono_caja9">
-        <i class="fa-solid fa-house"></i>
-      <label for="direccion" class="formulario__label"><strong>DIRECCION*</strong>(ingresar direccion completa si aplica)</label>
-      <input id="direccion" type="text" class="formulario__input"/>
-    </div>
+
+      <label for="barrio" class="formulario__label"><i class="fa-solid fa-map-pin" style="color:brown"></i>&nbsp;&nbsp;<strong>BARRIO*</strong></label>
+      <input id="barrio" type="text" class="formulario__input" required=""/>
+
+
+      <label for="direccion" class="formulario__label"> <i class="fa-solid fa-house" style="color:brown">&nbsp;&nbsp;</i><strong>DIRECCION*</strong></label>
+      <input id="direccion" type="text" class="formulario__input" required=""/>
+
 
       <h1 class="formulario__titulo">INFORMACION DEL PRODUCTO</h1>
       <p class="formulario__parrafo">
@@ -159,15 +142,12 @@
         campos con * es obligatorio.</strong>
       </p>
 
-       <div class="icono_cajac">
-       <i class="fa-solid fa-tag"></i>
-      <label for="codigo" class="formulario__label"><strong>CODIGO DE PRODUCTO*</strong></label>
-      <input id="codigo" type="text" class="formulario__input"/>
-    </div>
+       
+      <label for="codigo" class="formulario__label"> <i class="fa-solid fa-tag" style="color:brown"></i>&nbsp;&nbsp;<strong>CODIGO DE PRODUCTO*</strong></label>
+      <input id="codigo" type="text" class="formulario__input" required=""/>
 
-      <div class="icono_cajat">
-      <i class="fa-brands fa-algolia"></i>
-      <label for="servicio" class="formulario__label"><strong>TALLA</strong>(Solo si aplica)</label>
+
+      <label for="servicio" class="formulario__label"><i class="fa-brands fa-algolia" style="color:brown"></i>&nbsp;&nbsp;<strong>TALLA</strong>(Solo si aplica)</label>
       <select id="talla" name="talla" class="formulario__input" aria-placeholder="Talla">
         <option></option>
         <option>S</option>
@@ -177,19 +157,16 @@
         <option>XL</option>
         <option>XXL</option>
       </select>
-    </div>
-       <div class="icono_cajaco">
-       <i class="fa-solid fa-circle-half-stroke"></i>
-      <label for="color" class="formulario__label"><strong>COLOR</strong> (Solo si aplica)</label>
+    
+
+      <label for="color" class="formulario__label"><i class="fa-solid fa-circle-half-stroke" style="color:brown">&nbsp;&nbsp;</i><strong>COLOR</strong> (Solo si aplica)</label>
       <input id="color" type="text" class="formulario__input"/>
-    </div>
+
       
-      <div class="icono_cajao">
-      <i class="fa-solid fa-pen"></i>
-      <label for="observaciones" class="formulario__label"><strong>OBSERVACIONES</strong></label>
+      <label for="observaciones" class="formulario__label"><i class="fa-solid fa-pen" style="color:brown">&nbsp;&nbsp;</i><strong>OBSERVACIONES</strong></label>
       <textarea class="formulario__input" name="textoArea" id="observaciones" cols="95" rows="4"></textarea>
       <div class="div_centrado borde fondo_deg">
-      </div>
+   
         
           <h1 class="formulario__titulo">ENNVIAR CAPTURA DEL PRODUCTO QUE DESEAS SEGUIDO DE ESTE FORMULARIO</h1>          
           <p class="formulario__parrafo">
