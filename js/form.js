@@ -17,6 +17,7 @@ document.querySelector('#submit').addEventListener('click', e => {
   const barrio = document.querySelector('#barrio').value;
   const observaciones = document.querySelector('#observaciones').value;
   const departamento = document.querySelector('#departamento').value;
+  const numerodecalzado = document.querySelector('#numero de calzado').value;
  
   const resp = document.querySelector("#respuesta");
 
@@ -49,6 +50,8 @@ document.querySelector('#submit').addEventListener('click', e => {
           ${Talla}%0A
           *COLOR*%0A
           ${Color}%0A
+          *NUMERO DE CLAZADO*%0A
+          ${Numerodecalzado}%0A
           *OBSERVACIONES*%0A
           ${Observaciones}`;
           
