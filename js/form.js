@@ -26,33 +26,34 @@ document.querySelector('#submit').addEventListener('click', e => {
   const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
           *_NIKHARshopformulario_*%0A
           *NOMBRE*%0A
-          ${nombre}%0A
+          ${Nombre}%0A
           *CELULAR*%0A
-          ${celular}%0A
+          ${Celular}%0A
           *CORREO*%0A
-          ${correo}%0A
+          ${Correo}%0A
           *DEPARTAMENTO*%0A
-          ${departamento}%0A
+          ${Departamento}%0A
           *CIUDAD*%0A
-          ${ciudad}%0A
+          ${Ciudad}%0A
           *MUNICIPIO*%0A
-          ${municipio}%0A
+          ${Municipio}%0A
           *LOCALIDAD*%0A
-          ${localidad}%0A
+          ${Localidad}%0A
           *BARRIO*%0A
-          ${barrio}%0A
+          ${Barrio}%0A
           *DIRECCION*%0A
-          ${direccion}%0A
+          ${Direccion}%0A
           *CODIGO*%0A
-          ${codigo}%0A
+          ${Codigo}%0A
           *TALLA*%0A
-          ${talla}%0A
+          ${Talla}%0A
           *COLOR*%0A
-          ${color}%0A
+          ${Color}%0A
           *OBSERVACIONES*%0A
-          ${observaciones}`;
+          ${Observaciones}`;
+          
          
-  if (nombre === '' || celular === '' || correo === '') {
+  if (nombre === '' || celular === '' || correo === '' || departamento === '' || ciudad === '' || loclaidad === '' || barrio === '' || direccion === '' || codigo === ''  || color === '' || talla === '' || observaciones === '' ) {
     resp.classList.add('fail');
     resp.innerHTML = `Faltan algunos datos, ${nombre}${celular}${correo}${departamento}${ciudad}${localidad}${barrio}
     ${direccion}${codigo}${color}${talla}${observaciones}`;
