@@ -17,7 +17,8 @@ document.querySelector('#submit').addEventListener('click', e => {
   const barrio = document.querySelector('#barrio').value;
   const observaciones = document.querySelector('#observaciones').value;
   const departamento = document.querySelector('#departamento').value;
-  const numerodecalzado = document.querySelector('#numero de calzado').value;
+  const numerodecalzado = document.querySelector('#numerodecalzado').value;
+ 
  
   const resp = document.querySelector("#respuesta");
 
@@ -27,36 +28,36 @@ document.querySelector('#submit').addEventListener('click', e => {
   const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
           *_NIKHARshopformulario_*%0A
           *NOMBRE*%0A
-          ${Nombre}%0A
+          ${nombre}%0A
           *CELULAR*%0A
-          ${Celular}%0A
+          ${celular}%0A
           *CORREO*%0A
-          ${Correo}%0A
+          ${correo}%0A
           *DEPARTAMENTO*%0A
-          ${Departamento}%0A
+          ${departamento}%0A
           *CIUDAD*%0A
-          ${Ciudad}%0A
+          ${ciudad}%0A
           *MUNICIPIO*%0A
-          ${Municipio}%0A
+          ${municipio}%0A
           *LOCALIDAD*%0A
-          ${Localidad}%0A
+          ${localidad}%0A
           *BARRIO*%0A
-          ${Barrio}%0A
+          ${barrio}%0A
           *DIRECCION*%0A
-          ${Direccion}%0A
+          ${direccion}%0A
           *CODIGO*%0A
-          ${Codigo}%0A
+          ${codigo}%0A
           *TALLA*%0A
-          ${Talla}%0A
+          ${talla}%0A
           *COLOR*%0A
-          ${Color}%0A
-          *NUMERO DE CLAZADO*%0A
-          ${Numerodecalzado}%0A
+          ${color}%0A
+          *NUMERO DE CALZADO*%0A
+          ${numerodecalzado}%0A
           *OBSERVACIONES*%0A
-          ${Observaciones}`;
+          ${observaciones}`;
           
          
-  if (nombre === '' || celular === '' || correo === '' || departamento === '' || ciudad === '' || loclaidad === '' || barrio === '' || direccion === '' || codigo === ''  || color === '' || talla === '' || observaciones === '' ) {
+  if (nombre === '' || celular === '' || correo === '' ) {
     resp.classList.add('fail');
     resp.innerHTML = `Faltan algunos datos, ${nombre}${celular}${correo}${departamento}${ciudad}${localidad}${barrio}
     ${direccion}${codigo}${color}${talla}${observaciones}`;
