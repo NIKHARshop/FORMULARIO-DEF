@@ -4,20 +4,17 @@ document.querySelector('#submit').addEventListener('click', e => {
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
   const telefono = '573197660129';
 
-  const talla = document.querySelector('#talla').value;
+  
   const correo = document.querySelector('#email').value;
-  const codigo = document.querySelector('#codigo').value;
   const ciudad = document.querySelector('#ciudad').value;
   const nombre = document.querySelector('#cliente').value;
-  const color = document.querySelector('#color').value;
   const celular = document.querySelector('#celular').value;
   const direccion = document.querySelector('#direccion').value; 
   const municipio = document.querySelector('#municipio').value;
   const localidad = document.querySelector('#localidad').value;
   const barrio = document.querySelector('#barrio').value;
-  const observaciones = document.querySelector('#observaciones').value;
   const departamento = document.querySelector('#departamento').value;
-  const numerodecalzado = document.querySelector('#numerodecalzado').value;
+ 
  
  
   const resp = document.querySelector("#respuesta");
@@ -44,23 +41,14 @@ document.querySelector('#submit').addEventListener('click', e => {
           *BARRIO*%0A
           ${barrio}%0A
           *DIRECCION*%0A
-          ${direccion}%0A
-          *CODIGO*%0A
-          ${codigo}%0A
-          *TALLA*%0A
-          ${talla}%0A
-          *COLOR*%0A
-          ${color}%0A
-          *NUMERO DE CALZADO*%0A
-          ${numerodecalzado}%0A
-          *OBSERVACIONES*%0A
-          ${observaciones}`;
+          ${direccion}`;
+         
           
          
   if (nombre === '' || celular === '' || correo === '' ) {
     resp.classList.add('fail');
     resp.innerHTML = `Faltan algunos datos, ${nombre} ${celular} ${correo} ${departamento} ${ciudad} ${localidad} ${barrio}
-    ${direccion} ${codigo}`;
+    ${direccion}`;
     return false;
   }
  
