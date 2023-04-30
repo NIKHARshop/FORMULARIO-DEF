@@ -57,10 +57,10 @@ document.querySelector('#submit').addEventListener('click', e => {
           ${observaciones}`;
           
          
-  if (nombre === '' || celular === '' || correo === '' || departamento === '' || ciudad === '' || municipio === '' || localidad === '' || barrio === '' || direccion === '' || codigo === '' || talla === '' || numerodecalzado === '' || color === '' || observaciones === '' ) {
+  if (nombre === '' || celular === '' || correo === '' ) {
     resp.classList.add('fail');
-    resp.innerHTML = `Faltan algunos datos, ${nombre}${celular}${correo}${departamento}${ciudad}${localidad}${barrio}
-    ${direccion}${codigo}${color}${talla}${observaciones}`;
+    resp.innerHTML = `Faltan algunos datos, ${nombre} ${celular} ${correo} ${departamento} ${ciudad} ${localidad} ${barrio}
+    ${direccion} ${codigo}`;
     return false;
   }
  
