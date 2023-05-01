@@ -13,7 +13,12 @@ document.querySelector('#submit').addEventListener('click', e => {
   const municipio = document.querySelector('#municipio').value;
   const localidad = document.querySelector('#localidad').value;
   const barrio = document.querySelector('#barrio').value;
+  const codigo = document.querySelector('#codigo').value;
   const departamento = document.querySelector('#departamento').value;
+  const talla = document.querySelector('#talla').value;
+  const numerodecalzado = document.querySelector('#numerodecalzado').value;
+  const color = document.querySelector('#color').value;
+  const observaciones = document.querySelector('#observaciones').value;
  
  
  
@@ -41,7 +46,19 @@ document.querySelector('#submit').addEventListener('click', e => {
           *BARRIO*%0A
           ${barrio}%0A
           *DIRECCION*%0A
-          ${direccion}`;
+          ${direccion}%0
+          *CODIGO*%0A
+          ${codigo}%0A
+          *TALLA*%0A
+          ${talla}%0A
+          *NUMERO DE CALZADO*%0A
+          ${numerodecalzado}%0A
+          *COLOR*%0A
+          ${color}%0A
+          *OBSERVACIONES*%0A
+          ${observaciones}`;
+          
+          
          
           
          
@@ -54,10 +71,10 @@ document.querySelector('#submit').addEventListener('click', e => {
  
   resp.classList.remove('fail');
   resp.classList.add('send');
-  resp.innerHTML = `Se ha enviado tu pedido, ${nombre}`;
+  resp.innerHTML = `TUS DATOS SE ENVIARON CON EXITO, ${nombre}`;
 
   window.open(url);
-  window.alert('TU PEDIDO A SIDO ENVIADO');
+  window.alert('TUS DATOS SE ENVIARON CON EXITO');
 
 
   
