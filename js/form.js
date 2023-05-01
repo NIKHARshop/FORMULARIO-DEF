@@ -46,7 +46,7 @@ document.querySelector('#submit').addEventListener('click', e => {
           *BARRIO*%0A
           ${barrio}%0A
           *DIRECCION*%0A
-          ${direccion}%0
+          ${direccion}%0A
           *CODIGO*%0A
           ${codigo}%0A
           *TALLA*%0A
