@@ -13,6 +13,7 @@
   </head>
   <body>
     <form action="" class="formulario" method="post" enctype="multipart/form-data">
+     
       <center>
       <div class="imagen">
         <img src="https://i.ibb.co/c3n1VZm/logo-leon-4.png" alt="logo-leon-4" width="300px" />
@@ -44,19 +45,19 @@
         <option value="Amazonas">Amazonas</option>
         <option value="Antioquia">Antioquia</option>
         <option value="Arauca">Arauca</option>
-        <option value="Atlantico">Atlántico</option>
-        <option value="Distrto capital">Distrito capital</option>
+        <option value="Atlántico">Atlántico</option>
+        <option value="Distrito capital">Distrito capital</option>
         <option value="Bolivar">Bolívar</option>
-        <option value="Boyaca">Boyacá</option>
+        <option value="Boyacá">Boyacá</option>
         <option value="Caldas">Caldas</option>
-        <option value="Caqueta">Caquetá</option>
+        <option value="Caquetá">Caquetá</option>
         <option value="Casanare">Casanare</option>
         <option value="Cauca">Cauca</option>
         <option value="Cesar">Cesar</option>
         <option value="Choco">Chocó</option>
         <option value="Cordoba">Córdoba</option>
         <option value="Cundinamarca">Cundinamarca</option>
-        <option value="Guainia">Guainía</option>
+        <option value="Guainía">Guainía</option>
         <option value="Guaviare">Guaviare</option>
         <option value="Huila">Huila</option>
         <option value="La_Guajira">La Guajira</option>
@@ -65,12 +66,12 @@
         <option value="Nariño">Nariño</option>
         <option value="Norte_Santander">Norte de Santander</option>
         <option value="Putumayo">Putumayo</option>
-        <option value="Quindio">Quindío</option>
+        <option value="Quindío">Quindío</option>
         <option value="Risaralda">Risaralda</option>
         <option value="Santander">Santander</option>
         <option value="Sucre">Sucre</option>
         <option value="Tolima">Tolima</option>
-        <option value="Valle_cauca">Valle del Cauca</option>
+        <option value="Valle_Cauca">Valle del Cauca</option>
       </select>
    
       <label for="ciudad" class="formulario__label"> <i class="fa-regular fa-map" style="color:brown"></i>&nbsp;&nbsp;<strong>CIUDAD</strong></label>
@@ -89,7 +90,7 @@
         <option value="Popayan">Popayan</option>
         <option value="Valledupar">Valledupar</option>
         <option value="Quibdo">Quibdo</option>
-        <option value="Monteria">Monteria</option>
+        <option value="Montería">Montería</option>
         <option value="Inirida">Inirida</option>
         <option value="San Jose del Guaviare">San Jose del Guaviare</option>
         <option value="Neiva">Neiva</option>
@@ -118,13 +119,14 @@
 
       <label for="barrio" class="formulario__label"><i class="fa-solid fa-map-pin" style="color:brown"></i>&nbsp;&nbsp;<strong>BARRIO*</strong></label>
       <input id="barrio" type="text" class="formulario__input" required=""/>
-
-
-      <label for="direccion" class="formulario__label"> <i class="fa-solid fa-house" style="color:brown">&nbsp;&nbsp;</i><strong>DIRECCION*</strong>&nbsp;&nbsp;(favor no escribir el simbolo #)</label>
+       
+      <p class="formulario__parrafo">este espacio no admite símbolos como <strong>(#)</strong> para las dirección, se pueden remplazar por <strong>(No)</strong></p>
+      
+      <label for="direccion" class="formulario__label"> <i class="fa-solid fa-house" style="color:brown">&nbsp;&nbsp;</i><strong>DIRECCIÓN*</strong>&nbsp;&nbsp;(favor no escribir el símbolo #)</label>
       <input id="direccion" type="text" class="formulario__input" required="" pattern="[a-zA-Z0-9_.+-#]+"/>
        
       
-      <h1 class="formulario__titulo">INFORMACION DEL PRODUCTO</h1>
+      <h1 class="formulario__titulo">INFORMACIÓN DEL PRODUCTO</h1>
       <p class="formulario__parrafo">
        <strong>Este espacio es para el producto que deseas,diligenciar los campos correspondientes, los campos con * es obligatorio</strong>
       </p>
@@ -132,7 +134,7 @@
   
       
        
-      <label for="codigo" class="formulario__label"> <i class="fa-solid fa-tag" style="color:brown"></i>&nbsp;&nbsp;<strong>CODIGO DEL PRODUCTO*</strong></label>
+      <label for="codigo" class="formulario__label"> <i class="fa-solid fa-tag" style="color:brown"></i>&nbsp;&nbsp;<strong>CÓDIGO DEL PRODUCTO*</strong></label>
       <input id="codigo" type="text" class="formulario__input" required=""/>
   
   
@@ -179,6 +181,7 @@
       
     </form>
     <script src="js/form.js"></script>
+    
   </body>
 </html>
 
