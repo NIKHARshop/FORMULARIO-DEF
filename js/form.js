@@ -1,7 +1,7 @@
 document.querySelector('#submit').addEventListener('click', e => {
   e.preventDefault();
 
-  //INGRESE UN NUMERO DE WhatsApp VALIDO AQUÍ:
+  //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUÍ:
   const teléfono = '573197660129';
 
   
@@ -28,7 +28,7 @@ document.querySelector('#submit').addEventListener('click', e => {
   resp.classList.remove('send');
 
   const url = `https://api.whatsapp.com/send?phone=${teléfono}&text=
-          *_NIKHARshopformulario_*%0A
+          *_PEDIDO_*%0A
           *NOMBRE*%0A
           ${nombre}%0A
           *CELULAR*%0A
