@@ -176,10 +176,12 @@
 
 
       <div id="respuesta"></div>
-      <button id="submit" class="formulario__submit" onclick="return validar();">Enviar a WhatsApp</button>
+      <button data-swal-toast-template="#my-template" id="submit" class="formulario__submit" onclick="return validar(); call()" alert(TU PEDIDO HA SIDO ENVIADO)> ENVIAR</button>
 
       
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sweeAlert.js"></script>
     <script src="js/form.js"></script>
     
   </body>
