@@ -18,6 +18,7 @@ document.querySelector('#submit').addEventListener('click', e => {
   const talla = document.querySelector('#talla').value;
   const numerodecalzado = document.querySelector('#numerodecalzado').value;
   const color = document.querySelector('#color').value;
+  const cantidad = document.querySelector('#cantidad').value;
   const observaciones = document.querySelector('#observaciones').value;
  
  
@@ -55,6 +56,8 @@ document.querySelector('#submit').addEventListener('click', e => {
           ${numerodecalzado}%0A
           *COLOR*%0A
           ${color}%0A
+          *CANTIDAD*%0A
+          ${cantidad}%0A
           *OBSERVACIONES*%0A
           ${observaciones}`;
           

@@ -136,9 +136,20 @@ body {
 .h1 {
   color: #8f0404;
 }
+.caja{
+  width: 40%;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1px;
+  border: 1px solid #0c0c0c;
+  font-family: 'calibri';
+  font-size: 18px;
+  padding-left: auto;
+  color: black;
+}
 @media screen and (max-width: 800px) {
 	body {
 		padding: 40px 0;
-	}
-
-
+	} 
+}

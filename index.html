@@ -135,11 +135,11 @@
       
        
       <label for="código" class="formulario__label"> <i class="fa-solid fa-tag" style="color:brown"></i>&nbsp;&nbsp;<strong>CÓDIGO DEL PRODUCTO*</strong></label>
-      <input id="código" type="text" class="formulario__input" required=""/>
+      <input id="código" type="text" class="caja" required=""/>
   
   
       <label for="Talla" class="formulario__label"><i class="fa-brands fa-algolia" style="color:brown"></i>&nbsp;&nbsp;<strong>TALLA</strong> &nbsp;(Solo si aplica)</label>
-      <select id="talla" name="talla" class="formulario__input" aria-placeholder="Talla">
+      <select id="talla" name="talla" class="caja" aria-placeholder="Talla">
         <option value=""></option>
         <option value="S">S</option>
         <option value="M">M</option>
@@ -150,7 +150,7 @@
       </select>
   
       <label for="numero de calzado" class="formulario__label"><i class="fa-brands fa-algolia" style="color:brown"></i>&nbsp;&nbsp;<strong>NUMERO DE CALZADO</strong>&nbsp;&nbsp;(Solo si aplica)</label>
-      <select id="numerodecalzado" name="numero de calzado" class="formulario__input" aria-placeholder="numero de calzado">
+      <select id="numerodecalzado" name="numero de calzado" class="caja" aria-placeholder="numero de calzado">
         <option value=""></option>
         <option value="35">35</option>
         <option value="36">36</option>
@@ -166,7 +166,10 @@
     
   
       <label for="color" class="formulario__label"><i class="fa-solid fa-circle-half-stroke" style="color:brown">&nbsp;&nbsp;</i><strong>COLOR</strong>&nbsp;&nbsp;(Solo si aplica)</label>
-      <input id="color" type="text" class="formulario__input" placeholder=""/>
+      <input id="color" type="text" class="caja" placeholder=""/>
+
+      <label for="cantidad" class="formulario__label"> <i class="fa-solid fa-tag" style="color:brown"></i>&nbsp;&nbsp;<strong>CANTIDAD*</strong></label>
+      <input id="cantidad" type="number" class="caja" min="1" required/>
   
       
       <label for="observaciones" class="formulario__label"><i class="fa-solid fa-pen" style="color:brown">&nbsp;&nbsp;</i><strong>OBSERVACIONES</strong></label>
